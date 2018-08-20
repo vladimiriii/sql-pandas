@@ -1,8 +1,8 @@
-## CSV Server
-Create a server that returns dynamically generated nested JSON files from CSVs
+## SQL Pandas
+An application to convert SQL queries into the equivalent pandas queries.
 
 #### Install
 bash install.sh
 
 #### Run
-bash run.sh 
+bash run.sh
