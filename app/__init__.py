@@ -15,14 +15,10 @@ def create_app():
 
 def init_modules(app):
     # Import a module / component using its blueprint handler variable
-    from app.views import landing_page
-    from app.views import output_page
-    from app.views import documentation
+    from app.views import basic_page
 
     # Register blueprint(s)
-    app.register_blueprint(landing_page)
-    app.register_blueprint(output_page)
-    app.register_blueprint(documentation)
+    app.register_blueprint(basic_page)
 
 # Read config file
 def load_config(app):
