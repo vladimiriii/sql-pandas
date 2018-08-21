@@ -1,15 +1,29 @@
 {% extends "base-layout.html" %}
 {% block body %}
 	<div class="row">
-		<div class="col-md-8 col-md-offset-2">
+		<div class="col-md-8 offset-md-2">
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-md-12 text-center">
 					<h1>SQL Pandas - SQL to Pandas Converter</h1>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-12">
-            		<p>Some text goes here.</p>
+            		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat felis in venenatis maximus. Suspendisse egestas nisl lacus, bibendum cursus nisi porttitor ac. Fusce vitae fringilla erat. Integer sapien lorem, sollicitudin non urna et, dapibus dignissim nisi. Duis blandit libero sapien, in sagittis massa tristique eget. Aenean feugiat massa eget purus accumsan, ac interdum magna lacinia. Morbi vehicula eget quam ut eleifend. Donec porta lectus elit, sed fringilla tellus egestas a. Aliquam ac dignissim mi, sed efficitur neque. Phasellus quis eleifend ipsum.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+            		<textarea class="form-control" rows="20" placeholder="Copy SQL query here." id="sqlInput"></textarea>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<br>
+					<button type="button" class="btn btn-primary btn-lg" id="submitButton">
+						Submit
+						<i class="fas fa-cogs"></i>
+					</button>
 				</div>
 			</div>
 		</div>
