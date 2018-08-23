@@ -57,7 +57,19 @@ function processSQL(query) {
 	};
 	renameClause = renameClause.substring(0, renameClause.length - 2) + "})";
 
-	console.log(columnClause + renameClause);
+	// FROM clause
+	fromClause = query
+		.substring(query.toLowerCase().indexOf('from'), Math.max(query.toLowerCase().indexOf('where'), query.length))
+		.substring(4)
+		.replace(/\s\s+/g, ' ').replace(/^\s+|\s+$/g, '')
+		.split(' ');
+
+	console.log(fromClause);
+
+	// Combine query elements
+	const pandasQuery = fromClause[0] + columnClause + renameClause
+	$('#pandasOutput').empty();
+	$('#pandasOutput').append(pandasQuery);
 
 	// fromStatement = query.substring(query.toLowerCase().indexOf('from'), query.toLowerCase().indexOf('where'));
 	// whereStatement = query.substring(query.toLowerCase().indexOf('where'), query.length);

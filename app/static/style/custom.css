@@ -9,9 +9,19 @@
     padding-right: 15px;
 }
 
+.bmc-button {
+	text-transform: none;
+	font-weight: normal;
+}
+
 /* Body */
 h1 {
 	margin-top: 50px;
+}
+
+h2 {
+	margin-top: 40px;
+	margin-bottom: 20px;
 }
 
 textarea {
